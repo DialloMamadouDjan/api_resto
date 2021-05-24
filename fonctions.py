@@ -14,6 +14,7 @@ def read_csv(filename):
     """
 
     with open(filename, 'r') as f:
+        logging.info(f'open the file {filename}')
         liste = []
         csv_reader = reader(f)
         for row in csv_reader:
